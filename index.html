@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Outfit', sans-serif;
+    }
+    body{
+      background-color: hsl(217, 54%, 11%);
+    }
+    main{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .content{
+      background-color: hsl(216, 50%, 16%);
+      width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    img{
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    .heading{
+      font-weight: 600;
+      color: #fff;
+      font-size: 22px;
+      margin: 20px 0;
+    }
+
+    .heading:hover{
+      color:hsl(178, 100%, 50%);
+      cursor: pointer;
+    }
+
+    p{
+      font-size: 18px;
+      font-weight: 300;
+      color: hsl(215, 51%, 70%);
+    }
+
+    .logo{
+      width: 10px;
+    }
+
+    .logo2{
+      width: 15px;
+    }
+
+    .quantity{
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+      /* width: 100%; */
+    }
+    
+    .quantity p{
+      font-size: 15px;
+      font-weight: 600;
+    }
+    
+    .quantity .first{
+      color: hsl(178, 100%, 50%);
+    }
+
+    hr{
+      /* border: 1px 0 0 0 solid hsl(215, 51%, 70%); */
+      border-width: 1px 0 0 0;
+      border-color: hsl(215, 51%, 70%);
+      margin: 20px 0;
+    }
+
+    .creator{
+      display: flex;
+      width: 75%;
+      justify-content: space-between;
+    }
+    
+    .creator img{
+      width: 30px;
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+    
+    .creator p{
+      font-size: 16px;
+      margin-top: 6px;
+    }
+
+    span{
+      color: #fff;
+    }
+
+    span:hover{
+      color: hsl(178, 100%, 50%);
+      cursor: pointer;
+    }
+
+    .overlay{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: hsl(178, 100%, 50%);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .image{
+      position: relative;
+    }
+
+    .image:hover .overlay{
+      opacity: 0.5;
+    }
+
+    .text img{
+      width: 50px;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="content">
+      <div class="image">
+        <img src="images/image-equilibrium.jpg" alt="">
+        <div class="overlay">
+          <div class="text"><img src="images/icon-view.svg" alt=""></div>
+        </div>
+      </div>
+      <p class="heading">Equilibrium #3429</p>
+    
+      <p> Our Equilibrium collection promotes balance and calm.</p>
+
+      <div class="quantity">
+        <p class="first"><img src="images/icon-ethereum.svg" alt="" class="logo"> 0.041 ETH</p>
+        <p><img src="images/icon-clock.svg" alt="" class="logo2"> 3 days left</p>
+      </div>
+
+      <hr>
+      
+      <div class="creator">
+        <img src="images/image-avatar.png" alt="">
+        <p> Creation of <span>Jules Wyvern</span></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
